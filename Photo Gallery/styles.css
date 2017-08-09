@@ -1,0 +1,361 @@
+#header{
+
+	background-color: white;
+
+	position: fixed;
+
+	top: 0px;
+	left: 0px;
+	
+	height: 100px;
+	width: 100%;
+
+	border: 1px solid black;
+
+	z-index: 2;
+
+
+}
+
+.title{
+
+	font-size: 50px;
+	text-align: center;
+	margin-top: 25px;
+
+}
+
+#buttonAdd{
+	background-color: #008000;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 10px 20px;
+
+	position: absolute;
+	bottom: 30px;
+	right: 60px;
+
+	text-decoration: none;
+	color: black;	
+}
+
+#buttonAdd:hover{
+	background-color: 	#00FF00;
+	cursor: pointer;
+	box-shadow: 0px 0px 15px black;
+
+
+}
+
+
+#content{
+	margin-top: 100px;
+	height: 100%;
+	overflow: hidden;
+}
+
+
+.album{
+	position: relative;
+
+	width: 33%;
+	height: 400px;
+	float: left;
+}
+
+
+
+
+#edit{
+	position: absolute;
+	top: 20px;
+	right: 50px;
+
+	text-decoration:none;
+	color: black;
+}
+
+#delete{
+
+	position: absolute;
+	top: 20px;
+	right: 20px;
+
+
+}
+
+#edit:hover , #delete:hover{
+	color: white;
+	cursor: pointer;
+	box-shadow: 0px 0px 15px black;
+
+}
+
+
+
+.albumThumbnail{
+
+	position: absolute;
+	top: 10%;
+	left: 10%;
+
+	height: 80%;
+	width:  80%;
+
+	
+}
+
+.albumThumbnail img{
+
+	height: 100%;
+	width: 100%;
+}
+
+.albumThumbnail:hover{
+	box-shadow: 0px 0px 15px black;
+}
+
+.albumDetails{
+	background-color: pink;
+	opacity: 0.5;
+
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+
+	height: auto;
+	width: 100%;
+
+
+}
+
+.albumDetails:hover{
+	opacity: 1;
+}
+
+#overlay{
+	background-color: black;
+
+
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	
+	width: 0%;
+	height: 0%;
+
+	opacity: 0.2;
+
+	z-index: 2;
+
+
+}
+
+#popup{
+	background-color: white;
+
+	position: fixed;
+	top: 25%;
+	left: 25%;
+
+	height: 0%;
+	width: 0%;
+
+	z-index: 3;
+
+	border-radius:  10px;
+}
+
+#popup:hover{
+	box-shadow: 0px 0px 10px black;
+}
+
+#popupHeader{
+	background-color: #525564;
+	position: relative;
+
+	width: 100%;
+	height: 20%;
+
+	font-size: 36px;
+	text-align: center;
+}
+
+#inputArea{
+	background-color: #BEB9B5;
+	position: relative;
+
+	width: 100%;
+	height: 50%;
+}
+
+#buttonArea{
+	background-color: #BEB9B5;
+	position: relative;
+
+	width: 100%;
+	height: 30%;
+}
+
+#saveAlbumButton{
+	position: absolute;
+	left: 20%;
+	top: 0%;
+	height: 60%;
+	width: 20%;
+
+
+}
+
+#saveEditPhotoButton{
+	position: absolute;
+	left: 20%;
+	top: 0%;
+	height: 60%;
+	width: 20%;
+
+
+}
+
+
+#cancelButton{
+	position: absolute;
+	right:  20%;
+	top: 0%;
+	height: 60%;
+	width: 20%;
+
+
+}
+
+.button{
+	text-align: center;
+	vertical-align: middle;
+	font-size: 36px;
+	border: 1px solid black;
+
+	padding: 10px;
+
+}
+
+.button:hover{
+	box-shadow: 0px 0px 10px black;
+	border: 1px solid black;
+}
+
+#albumTitleLabel{
+	position: absolute;
+	top: 20%;
+	left: 10%;
+
+	height: 60%;
+	width: 40%;
+
+	text-align: center;
+	font-size: 36px;
+
+}
+
+#albumTitleInput{
+	position: absolute;
+	top: 20%;
+	right: 10%;
+
+	height: 60%;
+	width: 40%;
+
+	text-align: center;
+	font-size: 36px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+#fabAdd{
+
+	background-color: white;
+	position: fixed;
+	bottom: 10%;
+	right: 5%;
+
+	height: 70px;
+	width: 70px;
+
+	border-radius: 50%;
+	border: 1px solid black;
+
+
+
+	font-size: 72px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 70px;
+}
+
+#fabAdd:hover{
+		box-shadow: 0px 0px 10px black;
+}
+
+#row1{
+	position: absolute;
+	top: 20%;
+	left: 0%;
+
+	width: 100%;
+	height: 20%;
+
+
+}
+
+#row2{
+	position: absolute;
+	top: 60%;
+	left: 0%;
+
+	width: 100%;
+	height: 20%;
+
+}
+
+#photoTitleLabel , #photoURLLabel{
+	position: absolute;
+	top: 0%;
+	left: 10%;
+
+	height: 100%;
+	width: 40%;
+}
+
+
+#photoTitleInput , #photoURLInput{
+	position: absolute;
+	top: 0%;
+	right: 10%;
+
+	height: 100%;
+	width: 40%;
+
+}
+
+#footer{
+	background-color: white;
+}
+
+
+#saveChanges{
+	position: absolute;
+	left: 20%;
+	top: 0px;
+
+	width: 20%;
+}
+
+#cancelChanges{
+	width: 20%;
+	position: absolute;
+	left: 60%;
+	top: 0px;
+	
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Photo Gallery</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div id="header">
+		
+	</div>
+	<div id="content">
+
+		
+
+		
+
+	</div>
+	<div id="footer">
+
+	</div>
+
+	<div id="overlay"></div>
+	
+
+	<!--Template for popup when add album button is clicked-->
+	<script type="text/template" id="addAlbumTemplate">
+		<div id="popupHeader">
+			<span id="AddAlbumLabel">AddAlbum</span>
+		</div>
+		<div id="inputArea" >
+			<div id="albumTitleLabel">Album Title</div>
+			<input type="text" name="albumTitle" id="albumTitleInput" placeholder="Enter Album Name">
+		</div>
+		<div id="buttonArea" >
+			<div id="saveAlbumButton" class="button">Save</div>
+			<div id="cancelButton" class="button">Cancel</div>
+		</div>
+	</script>
+	<!--End of Template Popup-->
+
+
+	<!--Template for popup when edit album button is clicked-->
+	<script type="text/template" id="editPhotoTemplate">
+		<div id="popupHeader">
+			<span id="AddAlbumLabel">Edit Photo</span>
+		</div>
+		<div id="inputArea" >
+			<div id = "row1">
+				<div id="photoTitleLabel">Photo Title</div>
+				<input type="text" name="albumTitle" id="photoTitleInput" placeholder="{{photoTitle}}" >		
+			</div>
+			<div id = "row2">
+				<div id="photoURLLabel">Photo URL</div>
+				<input type="text" name="albumTitle" id="photoURLInput" placeholder="{{photoURL}}">		
+			</div>
+			
+		</div>
+		<div id="buttonArea" >
+			<a id="saveEditPhotoButton" class="button" href="{{update}}" >Save</a>
+			<a id="cancelButton" class="button" href="{{cancel}}" >Cancel</a>
+		</div>
+	</script>
+	<!--End of Template Popup-->
+
+	<!--Start of template for main page header-->
+	<script type="text/template" id="albumsHeader">
+		<p id="headerTitle" class="title">Albums</p>
+		<a id="buttonAdd" href="#createAlbum">Add Album</a>
+	</script>
+	<!--End of template for main page header-->
+	
+
+
+	<!--Start of Template for album-->
+	<script type="text/template" id="albumTemplate">
+		<div class="album">
+			<div class="albumThumbnail">
+				<img src="{{url}}" alt="Image not available" albumId="{{id}}" />
+				<a id="edit" href="{{hash}}">!</a>
+				<a id="delete" href="{{delete}}">X</a>
+				<div class="albumDetails" >
+					<span>{{title}}</span><br/>
+					<span>{{noOfImages}} Photos</span>
+				</div>
+			</div>
+		</div>
+		
+	</script>
+	<!--End of template for album-->
+
+
+
+	<!--Start of Template for photo-->
+	<script type="text/template" id="photoTemplate">
+		<div class="album">
+			<div class="albumThumbnail">
+				<img src="{{url}}" alt="Image not available" albumId="{{albumId}}" photoId="{{id}}"/>
+				<a id="edit" href="{{edit}}">!</a>
+				<a id="delete" href="{{delete}}">X</a>
+				<div class="albumDetails" >
+					<span>{{title}}</span><br/>
+				</div>
+			</div>
+		</div>
+		
+	</script>
+	<!--End of template for photo-->
+
+
+
+
+
+
+	<!--Start of temlate for edit page header-->
+	<script type="text/template" id="albumHeader">
+		<p id="albumTitle" class="title">{{AlbumTitle}}</p>
+	</script>
+	<!--End of template for edit page header-->
+
+
+	<script type="text/template" id="footerTemplate">
+		<a id="saveChanges" class="button" href="{{saveChanges}}" >Save</a>
+		<a id="cancelChanges" class="button" href="{{cancelChanges}}">Cancel</a>
+
+	</script>
+
+
+
+	<script type="text/javascript" src="jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="EditPage.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
